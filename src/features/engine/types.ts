@@ -42,7 +42,7 @@ export interface Item {
 export interface Battle {
     participants: Character[];
     startBattle: () => void;
-    takeTurn: (character: Character, action: Action) => void;
+    takeTurn: (attacker: Character, defender: Character) => void;
 }
 
 // Перечисление возможных действий в бою
